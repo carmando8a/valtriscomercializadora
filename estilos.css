@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.social {
+    position: fixed;
+    left: -40px;
+    top: 320px;
+    z-index: 2000;
+}
+
+.social ul {
+    list-style: none;
+}
+
+.social ul li a {
+    display: inline-block;
+    color:#fff;
+    background: #000;
+    padding: 10px 10px;
+    font-size: 28px;
+    height: 52px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-instagram {background: #833ab4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;}
+.social ul li .icon-twitter {background:#00ABF0;}
+.social ul li .icon-linkedin {background:#024999;}
+.social ul li .icon-mail {background:#05ac95;}
+.social ul li .icon-twitter {background:#00ABF0;}
+.social ul li .icon-whatsapp {background:#09a803;}
+
+.social ul li a:hover {
+    /*background: #000;  Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
